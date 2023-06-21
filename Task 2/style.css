@@ -1,0 +1,103 @@
+body {
+    font-family: Arial, sans-serif;
+    margin: 80px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    background-color: skyblue;
+}
+
+h1 {
+    margin-top: 50px;
+    text-align: center;
+    color: #000;
+}
+
+.container {
+    
+    max-width: 700px;
+    margin: 0 auto;
+    padding: 40px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.2);
+    border-radius: 4px;
+    margin-top: 50px;
+  }
+
+.task-form {
+    margin-bottom: 20px auto;
+}
+
+.container [type="text"],
+select,
+input[type="date"],
+button {
+    margin-right: 10px;
+    padding: 5px;
+    font-size: 16px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+}
+
+.container button {
+    background-color: #000000;
+    color: white;
+    cursor: pointer;
+}
+
+.container button:hover {
+    background-color: #4d4d4d;
+}
+
+.container ul {
+    list-style-type: none;
+    padding: 0;
+}
+
+.container ul li {
+    text-align: center;
+    margin-bottom: 10px;
+    padding: 10px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    background-color: #f9f9f9;
+    align-self: flex-start;
+    color: black;
+}
+
+.task-text {
+    flex-grow: 1;
+}
+
+.task-list {
+    min-width: 100vw;
+}
+
+.list-item {
+    width: 100%;
+    max-width: 800px;
+    margin: 0 auto;
+    display:  flex;
+    justify-content: space-around;
+    align-items: center;
+    background-color: #000;
+}
+
+.task-priority {
+    color: #fff; 
+    padding: 6px 10px;
+    border-radius: 5px;
+    font-size: 14px;
+    font-weight: bold;
+    text-transform: uppercase;
+}
+
+.container button.low {
+    background-color: green;
+}
+.container button.medium {
+    background-color: yellow;
+}
+.container button.high {
+    background-color: red;
+}
